@@ -1,6 +1,6 @@
 {
   "name": "ignore-pipe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Filters piped paths by $HOME/.gitignore",
   "main": "ignore-pipe.js",
   "author": "Beau Gunderson <beau@beaugunderson.com>",
