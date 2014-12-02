@@ -1,0 +1,32 @@
+{
+  "name": "ignore-pipe",
+  "version": "1.0.0",
+  "description": "Filters piped paths by $HOME/.gitignore",
+  "main": "ignore-pipe.js",
+  "author": "Beau Gunderson <beau@beaugunderson.com>",
+  "license": "BSD",
+  "bin": {
+    "ignore-pipe": "ignore-pipe.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "byline": "^4.1.1",
+    "ignore": "^2.2.15"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beaugunderson/ignore-pipe.git"
+  },
+  "keywords": [
+    "filter",
+    "pipe",
+    "ignore",
+    ".gitignore",
+    "gitignore"
+  ],
+  "bugs": {
+    "url": "https://github.com/beaugunderson/ignore-pipe/issues"
+  },
+  "homepage": "https://github.com/beaugunderson/ignore-pipe"
+}
