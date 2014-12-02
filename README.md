@@ -3,7 +3,13 @@
 `ignore-pipe` filters stdin to files that to do not match the patterns in
 `$HOME/.gitignore`.
 
-Example:
+### Installation
+
+```sh
+$ npm install -g ignore-pipe
+```
+
+### Example
 
 ```sh
 $ find .
