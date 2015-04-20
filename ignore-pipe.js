@@ -6,12 +6,11 @@ var byline = require('byline');
 var ignore = require('ignore');
 var path = require('path');
 
+require('epipebomb')();
+
 var gitIgnore = ignore();
 
 gitIgnore.addIgnoreFile(path.join(process.env.HOME, '.gitignore'));
-
-process.stdin.resume();
-process.stdin.setEncoding('utf8');
 
 byline(process.stdin).on('data', function (line) {
   gitIgnore.filter([line]).forEach(function (passed) {
