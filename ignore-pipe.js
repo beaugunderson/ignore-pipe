@@ -10,7 +10,12 @@ require('epipebomb')();
 
 var gitIgnore = ignore();
 
-gitIgnore.addIgnoreFile(path.join(process.env.HOME, '.gitignore'));
+var thePath = '.gitignore';
+if (process.argv.indexOf("-l") === -1) {
+  thePath = path.join(process.env.HOME, thePath);
+}
+
+gitIgnore.addIgnoreFile(thePath);
 
 byline(process.stdin).on('data', function (line) {
   gitIgnore.filter([line]).forEach(function (passed) {

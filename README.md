@@ -3,6 +3,8 @@
 `ignore-pipe` filters stdin to files that to do not match the patterns in
 `$HOME/.gitignore`.
 
+Using the `-l` switch will use `./.gitignore` instead.
+
 ### Installation
 
 ```sh
